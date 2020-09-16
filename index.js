@@ -25,6 +25,7 @@ module.exports = {
         "rxjs",
         "implicit-dependencies",
         "filenames",
+        "sonarjs"
     ],
     rules: {
         //kushki
@@ -66,7 +67,6 @@ module.exports = {
                 ],
             },
         ],
-        //tslint-eslint-rules
         "no-constant-condition": "error",
         "no-control-regex": "error",
         "no-duplicate-case": "error",
@@ -85,7 +85,13 @@ module.exports = {
         "no-multi-spaces": "error",
         "handle-callback-err": "error",
         "brace-style": "error",
-        //rxjs-tslint-rules
+        "underscore-consistent-invocation": [
+            true,
+            {
+                "style": "static"
+            }
+        ],
+        //rxjs-eslint-rules
         "rxjs/no-create": "off",
         "rxjs/no-tap": "error",
         "rxjs/no-unsafe-switchmap": "error",
@@ -104,5 +110,8 @@ module.exports = {
         "rxjs/no-async-subscribe": "error",
         "rxjs/no-ignored-subscription": "off",
         "rxjs/no-explicit-generics": "error",
+        //sonar
+        "sonarjs/no-duplicate-string": "error",
+        "sonarjs/prefer-while": "error"
     },
 };
